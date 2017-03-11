@@ -1,0 +1,44 @@
+{
+  "name": "jflint",
+  "version": "0.1.0",
+  "description": "A client tool to lint Jenkinsfile",
+  "main": "index.js",
+  "bin": {
+    "jflint": "./bin/jflint.js"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "ci": "npm run test:unit:cover",
+    "test": "./node_modules/.bin/_mocha --require intelli-espower-loader",
+    "test:cover": "./node_modules/.bin/istanbul --include-all-sources cover ./node_modules/.bin/_mocha --report lcovonly -- --require intelli-espower-loader"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miyajan/jflint.git"
+  },
+  "keywords": [
+    "jenkins",
+    "lint"
+  ],
+  "author": "miyajan <miyajan777@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/miyajan/jflint/issues"
+  },
+  "homepage": "https://github.com/miyajan/jflint",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "form-data": "^2.1.2",
+    "js-base64": "^2.1.9",
+    "node-fetch": "^1.6.3"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.16",
+    "intelli-espower-loader": "^1.0.1",
+    "mocha": "^3.2.0",
+    "power-assert": "^1.4.2",
+    "proxyquire": "^1.7.11"
+  }
+}

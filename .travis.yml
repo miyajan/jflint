@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - 4
+  - 6
+  - 7
+sudo: false
+cache:
+  directories:
+    - node_modules
+script: npm run ci
+after_success:
+  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+notifications:
+  email: false
