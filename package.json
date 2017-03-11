@@ -10,7 +10,7 @@
     "node": ">=4"
   },
   "scripts": {
-    "ci": "npm run test:unit:cover",
+    "ci": "npm run test:cover",
     "test": "./node_modules/.bin/_mocha --require intelli-espower-loader",
     "test:cover": "./node_modules/.bin/istanbul --include-all-sources cover ./node_modules/.bin/_mocha --report lcovonly -- --require intelli-espower-loader"
   },
