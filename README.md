@@ -1,6 +1,6 @@
 # jflint
 
-A client tool to lint Declarative Jenkinsfile
+A helper tool to lint a Declarative Jenkinsfile
 
 [![npm version](https://img.shields.io/npm/v/jflint.svg)](https://www.npmjs.com/package/jflint)
 [![npm downloads](https://img.shields.io/npm/dm/jflint.svg)](https://www.npmjs.com/package/jflint)
@@ -12,11 +12,11 @@ A client tool to lint Declarative Jenkinsfile
 
 ## Description
 
-This tool helps to lint Declarative Jenkinsfile.
+This tool helps to lint a Declarative Jenkinsfile.
 
-[The official document](https://github.com/jenkinsci/pipeline-model-definition-plugin/wiki/Validating-(or-linting)-a-Declarative-Jenkinsfile-from-the-command-line) provides ssh approach and curl approach to lint Declarative Jenkinsfile. However, both approaches are a bit complicated for daily use.
+[The official document](https://github.com/jenkinsci/pipeline-model-definition-plugin/wiki/Validating-(or-linting)-a-Declarative-Jenkinsfile-from-the-command-line) provides a ssh approach and a curl approach to lint a Declarative Jenkinsfile. However, both approaches are a bit complicated for daily use.
 
-So I created this tool to lint easily. This tool itself does not lint Jenkinsfile, but sends a request to Jenkins in the same way as curl approach and displays the result.
+So I created this tool to lint easily. **This tool itself does not lint a Jenkinsfile, but sends a request to Jenkins in the same way as curl approach and displays the result**.
 
 ## Install
 
