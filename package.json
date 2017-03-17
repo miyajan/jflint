@@ -1,6 +1,6 @@
 {
   "name": "jflint",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A client tool to lint Jenkinsfile",
   "main": "index.js",
   "bin": {
