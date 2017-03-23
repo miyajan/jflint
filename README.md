@@ -67,6 +67,7 @@ You can load options from json file like the following.
 Config file is searched in the following order.
 
 * the path specified by ```-c|--config```
+* ```.jflintrc``` from the current directory all the way up to the filesystem root
 * ```${HOME}/.jflintrc```
 
 If the same setting is specified in both option and config file, the option setting overrides the config setting.
