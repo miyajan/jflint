@@ -52,6 +52,10 @@ Specify this options when CSRF security setting is disabled on Jenkins.
 
 Specify a path to config file.
 
+### ```--ssl-verification-disabled```
+
+Disable SSL verification.
+
 ## Config file
 
 You can load options from json file like the following.
