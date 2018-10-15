@@ -35,11 +35,14 @@
     "node-fetch": "^1.6.3"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
     "coveralls": "^2.11.16",
     "intelli-espower-loader": "^1.0.1",
     "istanbul": "^0.4.5",
     "mocha": "^3.2.0",
     "power-assert": "^1.4.2",
-    "proxyquire": "^1.7.11"
+    "proxyquire": "^1.7.11",
+    "sinon": "^7.0.0",
+    "sinon-chai": "^3.2.0"
   }
 }
