@@ -1,3 +1,10 @@
+### 0.3.1 (2018-10-16)
+
+#### Bug Fixes
+
+* **cli:**
+  * Allowing CLI to return success when Jenkins node is running on Windows (CRLF endings) ([cd96dbf](https://github.com/miyajan/jflint/commit/cd96dbfd3654c1ff94410ef57d4cd280270d03fb))
+
 ## 0.3.0 (2018-03-18)
 
 
