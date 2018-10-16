@@ -1,3 +1,11 @@
+### [0.3.2](https://github.com/miyajan/jflint/compare/0.3.1...0.3.2) (2018-10-16)
+
+
+### Bug Fixes
+
+* **cli:** fix function binding ([ada25ae](https://github.com/miyajan/jflint/commit/ada25ae))
+
+
 ### 0.3.1 (2018-10-16)
 
 #### Bug Fixes
