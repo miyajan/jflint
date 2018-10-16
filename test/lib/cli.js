@@ -4,6 +4,9 @@ const CommandLine = require('../../lib/cli');
 const assert = require('assert');
 const os = require('os');
 const path = require('path');
+const sinon = require('sinon');
+const chai = require('chai');
+chai.use(require('sinon-chai'));
 
 describe('CommandLine', function() {
     let sut;
@@ -31,6 +34,30 @@ describe('CommandLine', function() {
             // exercise & verify
             const dir = path.normalize(`${__dirname}`);
             assert(sut._findConfigPath(dir) === path.join(os.homedir(), '.jflintrc'));
+        });
+    });
+
+    describe('_interpretResult', function() {
+        beforeEach(function() {
+            sut._process = {
+                stdout: { write: sinon.stub() },
+                stderr: { write: sinon.stub() },
+                exit: sinon.stub()
+            };
+        });
+
+        it('should handle success response from Linux node', function() {
+            const res = 'Jenkinsfile successfully validated.\n';
+            sut._interpretResult(res);
+
+            chai.expect(sut._process.exit).to.be.calledWith(0);
+        });
+
+        it('should handle success response from Windows node', function() {
+            const res = 'Jenkinsfile successfully validated.\r\n';
+            sut._interpretResult(res);
+
+            chai.expect(sut._process.exit).to.be.calledWith(0);
         });
     });
 });
